@@ -4,7 +4,7 @@
 int arr[MAX_SIZE];
 int n;
 
-void swap(int* a, int* b) {
+void swap(int *a, int *b) {
     int t = *a;
     *a = *b;
     *b = t;
@@ -35,7 +35,8 @@ void quick_sort(int low, int high) {
 
 int main() {
     printf("Enter the number of elements: ");
-    if (scanf("%d", &n) != 1 || n > MAX_SIZE) return 1;
+    if (scanf("%d", &n) != 1 || n > MAX_SIZE)
+        return 1;
 
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
